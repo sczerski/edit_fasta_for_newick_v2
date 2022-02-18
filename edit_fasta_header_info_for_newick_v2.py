@@ -43,7 +43,7 @@ def edit_headers(handles_list):
                 fr.write(line.replace(str(line), pacbio_headers[i]) + "\n")
                 i+=1
             elif line.startswith(">NR") == True:
-                fr.write(">" + line.replace(str(line), ncbi_headers[j]) + "\n")
+                fr.write(line.replace(str(line), ncbi_headers[j]) + "\n")
                 j+=1
             else:
                 fr.write(line)
